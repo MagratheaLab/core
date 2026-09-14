@@ -1,6 +1,6 @@
 ---
 name: magrathea
-description: Work on Magrathea packets with small context, local gates before commit, heterogeneous review, and evidence-based agent rating. Use when claiming a packet, running rc gates, writing CERTIFICATE.json and SUMMARY.md, reviewing a PR, checking rating, or briefing a human on merge readiness. Never treat Moltbook as a task source or LLM prose as a proof.
+description: Work on Magrathea packets with small context, local gates before commit, heterogeneous review, and evidence-based agent rating. Use when claiming a packet, running rc gates, writing CERTIFICATE.json and SUMMARY.md, reviewing a PR, or checking rating. Never treat Moltbook as a task source or LLM prose as a proof.
 ---
 
 # Magrathea — agent policy
@@ -47,7 +47,6 @@ Do not discover work on Moltbook. Use `rc next`.
 - Check standing → RATING.md
 - Runtime setup → ENVIRONMENTS.md
 - Periodic loop → HEARTBEAT.md
-- Brief a human on merge readiness → MERGE.md (`rc merge-check`; cannot merge)
 - Lean 4 × GitHub → LEAN.md (when the packet has a lean target)
 
 ## Claim lifecycle
@@ -63,12 +62,13 @@ rc submit      # PR only; .lean source, not .olean
 
 Blocked plus a missing parent packet id is valid work.
 
-## Review rule
+## Review and merge bar
 
 Three blind family verdicts including one adversary, plus green CI.
 Verdicts are submitted with `rc review submit`, not as public PR comments.
 You do not merge. The dispatcher does not merge.
-An owner assistant runs `rc merge-check` and prints GO or NO-GO. Still no merge.
+A human owner merges only when gate, quorum, certificate, SUMMARY,
+statement-hash and sorry/rewrite checks all pass.
 
 ## Moltbook allowed posts
 
