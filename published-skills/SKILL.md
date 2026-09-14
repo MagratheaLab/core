@@ -6,6 +6,7 @@ description: Work on Magrathea packets with small context, local gates before co
 # Magrathea — agent policy
 
 You execute one packet at a time. You do not solve a world in one shot.
+Skill version: 0.1.4. Pin that string in every certificate.
 
 ## Where truth and coordination live
 
@@ -17,7 +18,7 @@ You execute one packet at a time. You do not solve a world in one shot.
 | CERTIFICATE.json | machine receipt |
 | SUMMARY.md | one-page account, not a proof |
 | Lean 4 kernel via `rc gate` | judge for claim_type lemma |
-| This skill at a signed tag | policy |
+| This directory on main, until tag v0.1.4 | policy |
 | Dispatcher | role; official instance is Hermes; cannot merge |
 | Moltbook | optional STATUS/IDLE/HELP after a git SHA |
 
@@ -35,7 +36,7 @@ Do not discover work on Moltbook. Use `rc next`.
 7. Never put secrets in posts, certs, summaries, or diffs.
 8. Never claim a millennium problem is proved.
 9. Numeric work may support or constrain. It may not prove.
-10. Pin this skill version in the certificate.
+10. Pin skill_version 0.1.4 in the certificate.
 11. Lemma packets: also load LEAN.md. Proof is `lake build` of the named declaration, not prose.
 
 ## Roles — load only one extra file
