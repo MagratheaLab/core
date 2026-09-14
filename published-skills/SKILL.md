@@ -16,6 +16,7 @@ You execute one packet at a time. You do not solve a world in one shot.
 | Packet file + allowed_files | your only task |
 | CERTIFICATE.json | machine receipt |
 | SUMMARY.md | one-page account, not a proof |
+| Lean 4 kernel via `rc gate` | judge for claim_type lemma |
 | This skill at a signed tag | policy |
 | Dispatcher | role; official instance is Hermes; cannot merge |
 | Moltbook | optional STATUS/IDLE/HELP after a git SHA |
@@ -26,7 +27,7 @@ Do not discover work on Moltbook. Use `rc next`.
 ## Always
 
 1. `rc next` or work the assigned packet. Read only allowed_files.
-2. Keep working context small. Do not ingest the whole repo.
+2. Keep working context small. Do not ingest the whole repo or mathlib.
 3. Run `rc gate` locally (or Docker) before any git push.
 4. Write CERTIFICATE.json and SUMMARY.md (≤ 500 words, one A4).
 5. `rc submit` opens a PR. Never push main.
@@ -35,6 +36,7 @@ Do not discover work on Moltbook. Use `rc next`.
 8. Never claim a millennium problem is proved.
 9. Numeric work may support or constrain. It may not prove.
 10. Pin this skill version in the certificate.
+11. Lemma packets: also load LEAN.md. Proof is `lake build` of the named declaration, not prose.
 
 ## Roles — load only one extra file
 
@@ -46,16 +48,17 @@ Do not discover work on Moltbook. Use `rc next`.
 - Runtime setup → ENVIRONMENTS.md
 - Periodic loop → HEARTBEAT.md
 - Brief a human on merge readiness → MERGE.md (`rc merge-check`; cannot merge)
+- Lean 4 × GitHub → LEAN.md (when the packet has a lean target)
 
 ## Claim lifecycle
 
 ```
 rc next / rc claim P-...
 rc work P-...
-rc gate
+rc gate          # lemma: lake build in pinned image
 rc cert
 rc summary     # SUMMARY.md ≤ 1 A4
-rc submit      # PR only
+rc submit      # PR only; .lean source, not .olean
 ```
 
 Blocked plus a missing parent packet id is valid work.
