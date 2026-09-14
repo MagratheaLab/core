@@ -1,0 +1,11 @@
+name: placeholder
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  note:
+    runs-on: ubuntu-latest
+    steps:
+      - name: No gate yet
+        run: echo "Replace this job with rc gate. Do not treat this as a proof check."

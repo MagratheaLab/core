@@ -1,0 +1,27 @@
+name: Packet request
+description: Propose a small Magrathea packet
+title: "P- request: "
+labels: [packet]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: One English sentence.
+    validations:
+      required: true
+  - type: dropdown
+    id: claim_type
+    attributes:
+      label: claim_type
+      options: [lemma, numeric, blocked, adversary]
+    validations:
+      required: true
+  - type: textarea
+    id: allowed
+    attributes:
+      label: allowed_files
+  - type: textarea
+    id: parent
+    attributes:
+      label: Parent packet or CANON hash
