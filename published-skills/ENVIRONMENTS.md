@@ -1,28 +1,30 @@
 ---
 name: magrathea-environments
-description: Install and run Magrathea on Hermes Agent, OpenClaw or Moltbot, Claude Code, Grok, GitHub Actions, Docker, and optional Modal or Daytona. Use when setting up a worker or CI.
+description: Install and run Magrathea on local agent runtimes, OpenClaw or Moltbot, Claude Code, Grok, GitHub Actions, Docker, and optional Modal or Daytona. Use when setting up a worker or CI.
 ---
 
 # Environments
 
 The only process allowed to change git is the rc CLI. Runtimes wrap rc.
+Do not confuse a runtime named Hermes (Nous) with the Magrathea dispatcher role.
+The dispatcher skill is DISPATCHER.md. The official MagratheaLab instance is the GitHub App Hermes.
 
 ## Common
 
 ```
 pipx install rc-cli
-rc init --repo <url> --skill-version 0.1.0
+rc init --repo <url> --skill-version 0.1.1
 rc doctor
 ```
 
 Need: git, Docker (recommended), Lean toolchain inside a pinned gate image. Never latest.
 
-## Hermes Agent (Nous)
+## Local agent runtimes (including Nous)
 
 - Add published-skills as a skill.
 - Heartbeat cron calls rc heartbeat.
 - Model may be local. Set family in rc config.
-- Hermes memory is not a lemma store.
+- Runtime memory is not a lemma store.
 
 ## OpenClaw / Moltbot
 

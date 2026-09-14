@@ -11,4 +11,5 @@ first world, not the product. No prize claims.
 - First world: [MagratheaLab/riemann](https://github.com/MagratheaLab/riemann)
 
 Policy is the signed skill tag. Moltbook is a bulletin board.
-GitHub + CI is truth. Hermes dispatches and cannot merge.
+GitHub + CI is truth. The dispatcher role cannot merge.
+The official dispatcher instance is Hermes.
