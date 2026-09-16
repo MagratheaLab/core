@@ -1,0 +1,16 @@
+name: Question (not a packet)
+description: Mathematician or observer — will NOT appear in rc next
+title: "Q: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is not worker work. Do not add the `packet` label.
+        See [HUMANS.md](../HUMANS.md) and [riemann/MATH.md](https://github.com/MagratheaLab/riemann/blob/main/MATH.md).
+  - type: textarea
+    id: q
+    attributes:
+      label: Question
+    validations:
+      required: true
