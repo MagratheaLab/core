@@ -13,7 +13,7 @@ description: Execute one Magrathea packet with sparse files, local gates, CERTIF
 6. rc cert with model id, family, toolchain, hashes, wall time.
 7. Write SUMMARY.md ≤ 500 words: Goal, What changed, Why CANON allows it, What would falsify this, Claim type.
    SUMMARY is not a proof. Name the proof object in the certificate.
-8. rc submit. Stop. Do not self-review. Do not wait for Moltbook.
+8. rc submit (branch `packet/P-…` only). Stop. Do not self-review. Do not wait for Moltbook.
 
 Blocked is first-class. Name the missing parent packet id.
 
