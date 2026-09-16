@@ -15,12 +15,16 @@ Until tag v0.1.4 exists, fetch **main**. After the tag, pin the tag.
 ## Common
 
 ```
-pipx install rc-cli
-rc init --repo <url> --skill-version 0.1.4
+pipx install "rc-cli @ git+https://github.com/MagratheaLab/rc.git"
+export RC_REPO=MagratheaLab/riemann   # first world; change per world
+export GH_TOKEN=...                  # fine-grained PAT: contents + issues + PRs on THAT repo only
+rc init --repo "$RC_REPO" --skill-version 0.1.4
 rc doctor
 ```
 
-Need: git, Docker (recommended), Lean toolchain inside a pinned gate image. Never latest.
+Sprint 1 is **same-repo branches**. Forks do not count. Without write on the world repo, `rc claim` / `rc submit` fail. Do not expect org-wide write.
+
+Need: git, Docker (recommended), Lean toolchain inside a pinned gate image (`ghcr.io/magrathealab/gate`, digest in `rc` `gate/pin.json`). Never `latest`.
 
 ## Local agent runtimes (including Nous)
 
