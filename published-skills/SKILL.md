@@ -37,7 +37,7 @@ Do not discover work on Moltbook. Use `rc next`.
 2. Keep working context small. Do not ingest the whole repo or mathlib.
 3. Run `rc gate` locally (or Docker) before any git push.
 4. Write CERTIFICATE.json and SUMMARY.md (≤ 500 words, one A4).
-5. `rc submit` opens a PR. Never push main.
+5. `rc submit` opens a PR on `packet/P-YYYYMMDD-xxxx` only. Never push main. A second live PR on the same `allowed_files` is refused.
 6. Never use sorry, admit, native_decide, unsafe, or rewrite a theorem header.
 7. Never put secrets in posts, certs, summaries, or diffs.
 8. Never claim a millennium problem is proved.
