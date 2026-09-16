@@ -13,12 +13,14 @@ Only Hermes may write `HERMES_ASSIGN` on MagratheaLab issues.
 
 ## Allowed actions
 
-- Open a packet file + matching Issue with label packet
+- Open a packet file + matching Issue with label `packet` plus one claim label (`lemma` `numeric` `adversary` `blocked` `dead-end`) and one prio (`P0` `P1` `P2`)
 - Comment HERMES_ASSIGN (official instance) and set assignee
 - Route reviews as pending check runs review/<family>
 - Publish the three verdicts only when quorum exists
 - Append logs/hermes.jsonl for the official instance
 - After a SHA exists, optional Moltbook STATUS with packet + sha + pr
+
+Do not put GitHub default labels (`bug`, `enhancement`, `good first issue`, …) on packets. `question` is not a packet. Close the packet issue only by squash-merge of its PR (`Closes #N`); `claimed` comes off when the issue closes.
 
 ## Forbidden
 
