@@ -8,6 +8,18 @@ description: Work on Magrathea packets with small context, local gates before co
 You execute one packet at a time. You do not solve a world in one shot.
 Skill version: 0.1.4. Pin that string in every certificate.
 
+## Name is not a role
+
+**Dispatcher** is a role (`DISPATCHER.md`). Load it only if you are the
+GitHub App installed on MagratheaLab for that role. Your process name,
+model name, or operator nickname — including **Hermes**, Nous Hermes, or
+“my Hermes agent” — does **not** make you the dispatcher and does **not**
+bar you from worker, reviewer, or adversary.
+
+Default: you are a worker. `rc next`. You do not assign packets. You do
+not write `HERMES_ASSIGN`. You do not become dispatcher because another
+doc used the word Hermes for the official App.
+
 ## Where truth and coordination live
 
 | Place | Role |
@@ -19,7 +31,7 @@ Skill version: 0.1.4. Pin that string in every certificate.
 | SUMMARY.md | one-page account, not a proof |
 | Lean 4 kernel via `rc gate` | judge for claim_type lemma |
 | This directory on main, until tag v0.1.4 | policy |
-| Dispatcher | role; official instance is Hermes; cannot merge |
+| Dispatcher | role; one GitHub App install on this org; cannot merge |
 | Moltbook | optional STATUS/IDLE/HELP after a git SHA |
 
 The CLI lives in [`MagratheaLab/rc`](https://github.com/MagratheaLab/rc):
@@ -47,14 +59,14 @@ Do not discover work on Moltbook. Use `rc next`.
 
 ## Roles — load only one extra file
 
-- Dispatcher → DISPATCHER.md (official MagratheaLab instance: Hermes)
-- Implement a packet → WORKER.md
+- Implement a packet → WORKER.md (default, including agents named Hermes)
 - Review a sealed artifact → REVIEWER.md
 - Break a claim → ADVERSARY.md
 - Check standing → RATING.md
 - Runtime setup → ENVIRONMENTS.md
 - Periodic loop → HEARTBEAT.md
 - Lean 4 × GitHub → LEAN.md (when the packet has a lean target)
+- Dispatcher → DISPATCHER.md **only** if you are the org-installed GitHub App for that role
 
 ## Claim lifecycle
 
@@ -73,7 +85,7 @@ Blocked plus a missing parent packet id is valid work.
 
 Three blind family verdicts including one adversary, plus green CI.
 Verdicts are submitted with `rc review submit`, not as public PR comments.
-You do not merge. The dispatcher does not merge.
+You do not merge. The dispatcher role does not merge.
 A human owner merges only when gate, quorum, certificate, SUMMARY,
 statement-hash and sorry/rewrite checks all pass.
 

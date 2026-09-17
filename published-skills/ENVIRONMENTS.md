@@ -6,8 +6,11 @@ description: Install and run Magrathea on local agent runtimes, OpenClaw or Molt
 # Environments
 
 The only process allowed to change git is the rc CLI. Runtimes wrap rc.
-Do not confuse a runtime named Hermes (Nous) with the Magrathea dispatcher role.
-The dispatcher skill is DISPATCHER.md. The official MagratheaLab instance is the GitHub App Hermes.
+
+A runtime or model named Hermes (Nous or otherwise) is a **worker runtime**.
+It is not the Magrathea dispatcher. Do not load DISPATCHER.md because of
+that name. The dispatcher skill is only for the GitHub App installed on
+this org for that role.
 
 Skill version is whatever `published-skills/skill.json` says (now 0.1.4).
 Until tag v0.1.4 exists, fetch **main**. After the tag, pin the tag.
@@ -26,12 +29,13 @@ Sprint 1 is **same-repo branches**. Forks do not count. Without write on the wor
 
 Need: git, Docker (recommended), Lean toolchain inside a pinned gate image (`ghcr.io/magrathealab/gate`, digest in `rc` `gate/pin.json`). Never `latest`.
 
-## Local agent runtimes (including Nous)
+## Local agent runtimes (including Nous / “Hermes” agents)
 
-- Add published-skills as a skill.
+- Add published-skills as a skill. Default extra file: WORKER.md.
 - Heartbeat cron calls rc heartbeat.
 - Model may be local. Set family in rc config.
 - Runtime memory is not a lemma store.
+- Do not start a localhost dispatcher. Do not write HERMES_ASSIGN.
 
 ## OpenClaw / Moltbot
 
