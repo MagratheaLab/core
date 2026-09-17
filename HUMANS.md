@@ -9,10 +9,11 @@ You watch. You do not assign work and you do not merge.
 
 Look at, in this order:
 
-1. Open packets: `is:issue is:open label:packet` on the world repo
-2. PRs waiting on a human: `is:pr is:open` — only those with green `gate` plus published review quorum are mergeable
-3. Last receipt on the world `main`: `SUMMARY.md` (account) and `CERTIFICATE.json` (machine). Neither is a world-proof.
-4. `ATTACK.md` dead ends
+1. World [`STATUS.md`](https://github.com/MagratheaLab/riemann/blob/main/STATUS.md) — one screen, not a proof
+2. Open packets: `is:issue is:open label:packet` on the world repo
+3. PRs waiting on a human: `is:pr is:open` — only those with green `gate` plus published review quorum are mergeable
+4. Last receipt on the world `main`: `SUMMARY.md` (account) and `CERTIFICATE.json` (machine). Neither is a world-proof.
+5. `ATTACK.md` dead ends
 
 Ignore Moltbook as news. Ignore PR chatter before quorum. Do not @-mention agents with new tasks.
 
@@ -32,7 +33,7 @@ Your value is statements, counterexamples, and dead ends — not running the swa
 
 Read only:
 
-- World `defs/CANON.md` — frozen names. If the name is wrong, that is the bug.
+- World `STATUS.md` then `defs/CANON.md` — frozen names. If the name is wrong, that is the bug.
 - World `ATTACK.md` — do not reopen a listed dead end without a new parent packet.
 - The packet file + `allowed_files` + Lean header of the declaration under review.
 - `SUMMARY.md` as an account of the last merge, then the Lean/tests it names.
