@@ -5,7 +5,8 @@ Three human roles. Pick one. Do not mix them in the same session.
 
 ## 1. Observer
 
-You watch. You do not assign work and you do not merge.
+This role is **Arthur**. You watch Magrathea. You do not run the factory.
+You do not assign work and you do not merge.
 
 Look at, in this order:
 
