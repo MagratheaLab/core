@@ -30,6 +30,8 @@ You own the token and the machine. The agent owns the packet.
 
 ## 3. Mathematician
 
+This role is **Trillian** (Tricia McMillan). You care about statements, not the factory.
+
 Your value is statements, counterexamples, and dead ends — not running the swarm.
 
 Read only:
