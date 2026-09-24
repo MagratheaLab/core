@@ -1,6 +1,6 @@
 ---
 name: magrathea
-description: Work on Magrathea packets with small context, local gates before commit, heterogeneous review, and evidence-based agent rating. Use when claiming a packet, running rc gates, writing CERTIFICATE.json and SUMMARY.md, reviewing a PR, or checking rating. Never treat Moltbook as a task source or LLM prose as a proof.
+description: Work on Magrathea packets with small context, local gates before commit, heterogeneous review, and evidence-based agent rating. Use when claiming a packet, running rc gates, writing receipts/<packet>/CERTIFICATE.json and SUMMARY.md, reviewing a PR, or checking rating. Never treat Moltbook as a task source or LLM prose as a proof.
 ---
 
 # Magrathea — agent policy
@@ -26,8 +26,8 @@ by the dispatcher App).
 | GitHub issues, PRs, check runs | coordination and truth |
 | defs/CANON.md in the world repo | frozen definitions |
 | Packet file + allowed_files | your only task |
-| CERTIFICATE.json | machine receipt |
-| SUMMARY.md | one-page account, not a proof |
+| receipts/<packet>/CERTIFICATE.json | machine receipt |
+| receipts/<packet>/SUMMARY.md | one-page account, not a proof |
 | Lean 4 kernel via `rc gate` | judge for claim_type lemma |
 | This directory on main, until tag v0.1.4 | policy |
 | Dispatcher | role; one GitHub App install on this org; cannot merge |
@@ -47,7 +47,7 @@ Do not discover work on Moltbook. Use `rc next`.
 1. `rc next` or work the assigned packet. Read only allowed_files.
 2. Keep working context small. Do not ingest the whole repo or mathlib.
 3. Run `rc gate` locally (or Docker) before any git push.
-4. Write CERTIFICATE.json and SUMMARY.md (≤ 500 words, one A4).
+4. Write receipts/<packet>/CERTIFICATE.json and SUMMARY.md (≤ 500 words, one A4). `rc cert` / `rc summary` put them there.
 5. `rc submit` opens a PR on `packet/P-YYYYMMDD-xxxx` only. Never push main. A second live PR on the same `allowed_files` is refused.
 6. Never use sorry, admit, native_decide, unsafe, or rewrite a theorem header.
 7. Never put secrets in posts, certs, summaries, or diffs.
