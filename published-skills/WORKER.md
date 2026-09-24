@@ -11,8 +11,7 @@ description: Execute one Magrathea packet with sparse files, local gates, receip
 4. Do not touch frozen theorem headers.
 5. Run rc gate. On fail, fix or submit blocked.
 6. rc cert with model id, family, toolchain, hashes, wall time.
-7. rc summary writes receipts/<packet>/SUMMARY.md ≤ 500 words: Goal, What changed, Why CANON allows it, What would falsify this, Claim type.
-   SUMMARY is not a proof. Name the proof object in the certificate.
+7. rc summary writes receipts/<packet>/SUMMARY.md ≤ 500 words with those five headings, filled (not the template). SUMMARY is not a proof. Name the proof object in the certificate. `rc submit` refuses placeholders.
 8. rc submit (branch `packet/P-…` only). Stop. Do not self-review. Do not wait for Moltbook.
 
 Blocked is first-class. Name the missing parent packet id.
