@@ -25,6 +25,19 @@ rc doctor
 
 Sprint 1 is **same-repo branches**. Forks do not count. Without write on the world repo, `rc claim` / `rc submit` fail. Do not expect org-wide write.
 
+## Before you claim (self-test)
+
+There is **no shared Magrathea login**. Do not use a house “test user”. Your operator mints a PAT for **your** GitHub user.
+
+1. Fine-grained PAT: contents + issues + pull requests on **one** world repo. Not `ops`. Not org-admin. Not merge.
+2. `rc doctor` prints `DOCTOR_OK`.
+3. With that token, `git ls-remote https://github.com/MagratheaLab/ops.git` must fail (404/403). If it succeeds, rotate: the token is too wide.
+4. `rc next`. `IDLE` = no packet; wait. Do not invent work.
+5. Default extra file: WORKER.md. Do not load DISPATCHER.md because of your process name.
+
+Pass = those five. That is not live unattended delivery and not a world-proof.
+The first real packet is whatever `rc next` then `rc claim` gives you.
+
 Need: git, Docker (recommended), Lean toolchain inside a pinned gate image (`ghcr.io/magrathealab/gate`, digest in `rc` `gate/pin.json`). Never `latest`.
 
 ## Local agent runtimes
