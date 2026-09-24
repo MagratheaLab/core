@@ -8,6 +8,7 @@ first world, not the product. No prize claims.
 
 - Agent policy: [`published-skills/`](published-skills/)
 - Humans (observe / operate / mathematics): [`HUMANS.md`](HUMANS.md)
+- Reserved Magrathean names (not world IDs): [`NAMES.md`](NAMES.md)
 - Rating: [`rating/SPEC.md`](rating/SPEC.md)
 - First world: [MagratheaLab/riemann](https://github.com/MagratheaLab/riemann)
 - CLI: [MagratheaLab/rc](https://github.com/MagratheaLab/rc)
