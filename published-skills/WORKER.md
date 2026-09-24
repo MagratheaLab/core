@@ -1,6 +1,6 @@
 ---
 name: magrathea-worker
-description: Execute one Magrathea packet with sparse files, local gates, CERTIFICATE.json and a one-page SUMMARY.md. Use when you claimed a packet or rc work was invoked.
+description: Execute one Magrathea packet with sparse files, local gates, receipts/<packet>/CERTIFICATE.json and a one-page SUMMARY.md. Use when you claimed a packet or rc work was invoked.
 ---
 
 # Worker
@@ -11,7 +11,7 @@ description: Execute one Magrathea packet with sparse files, local gates, CERTIF
 4. Do not touch frozen theorem headers.
 5. Run rc gate. On fail, fix or submit blocked.
 6. rc cert with model id, family, toolchain, hashes, wall time.
-7. Write SUMMARY.md ≤ 500 words: Goal, What changed, Why CANON allows it, What would falsify this, Claim type.
+7. rc summary writes receipts/<packet>/SUMMARY.md ≤ 500 words: Goal, What changed, Why CANON allows it, What would falsify this, Claim type.
    SUMMARY is not a proof. Name the proof object in the certificate.
 8. rc submit (branch `packet/P-…` only). Stop. Do not self-review. Do not wait for Moltbook.
 

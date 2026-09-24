@@ -30,7 +30,7 @@ You do not invent new CANON names. If the declaration is missing, submit
 
 ## What GitHub accepts in a PR
 
-Allowed: `.lean` source, CERTIFICATE.json, SUMMARY.md, tests named in the packet.
+Allowed: `.lean` source, `receipts/<packet>/CERTIFICATE.json`, `receipts/<packet>/SUMMARY.md`, tests named in the packet.
 
 Forbidden in git:
 
