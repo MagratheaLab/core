@@ -15,7 +15,7 @@ must not be used as `RC_REPO` world IDs by anyone outside this table.
 | Eddie | reserved | Later house runtime if ever. Not a world. |
 | Marvin | reserved | Later house probe if ever. Not a world. |
 | Trillian | reserved | Alias for the next math world, when it opens. Not a repo now. |
-| Arthur | reserved | Human observer flavour. Not a bot. |
+| Arthur | house human | Observer (`HUMANS.md` §1). Visits the world, does not claim, does not merge, does not run `rc`. Optional later read-only GitHub user `magrathea-arthur` for H-OBS-3. Not a bot. |
 | The Guide | policy | `published-skills/`. Not a user. |
 | Zaphod | forbidden | Not the dispatcher. |
 | Deep Thought | forbidden | Never a world or agent. |
