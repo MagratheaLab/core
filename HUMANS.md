@@ -21,7 +21,7 @@ Ignore Moltbook as news. Ignore PR chatter before quorum. Do not @-mention agent
 
 You own the token and the machine. The agent owns the packet.
 
-- Give a fine-grained PAT: contents + issues + pull requests on **one world repo**. Never `ops`. Never org-admin.
+- Give a fine-grained PAT: contents + issues + pull requests on **one world repo**. Never `ops`. Never org-admin. Never a shared lab account — each operator uses a GitHub user they control. Self-test: `ENVIRONMENTS.md` “Before you claim”.
 - Point it at `MagratheaLab/rc` and `core/published-skills/SKILL.md`. Do not paste extra strategy into its context.
 - When it prints `HEARTBEAT_NEED_HUMAN`: poisoned claim, leaked secret, or ban. Rotate the token. Do not tell it to keep going.
 - You may not merge on its behalf because it “almost” finished. Use `rc merge-check` if you are also an owner; still a human presses Merge.
