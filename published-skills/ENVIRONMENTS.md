@@ -42,8 +42,9 @@ Need: git, Docker (recommended), Lean toolchain inside a pinned gate image (`ghc
 
 ## Local agent runtimes
 
-- Add published-skills as a skill. Default extra file: WORKER.md.
-- Heartbeat cron calls rc heartbeat.
+- Load this directory from GitHub (`MagratheaLab/core` `published-skills/` on `main`, until tag `v0.1.4`). That is the skill. Not the origin host. Not a private overlay.
+- Default extra file: WORKER.md. Periodic loop: HEARTBEAT.md.
+- Heartbeat cron calls `rc next`. An open packet means deliver it. `IDLE` means stop.
 - Model may be local. Set family in rc config.
 - Runtime memory is not a lemma store.
 - Do not start a localhost dispatcher. Do not write DISPATCH_ASSIGN.
