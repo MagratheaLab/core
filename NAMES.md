@@ -3,8 +3,9 @@
 Not policy for workers. Agents do not load this file.
 House + operators: these strings are **ours**. They are not world repos.
 
-Worlds are problem slugs (`MagratheaLab/riemann`). Guide character names
-must not be used as `RC_REPO` world IDs by anyone outside this table.
+Worlds are problem slugs (`MagratheaLab/riemann`). The catalogue of those
+slugs is [`WORLDS.md`](WORLDS.md). Guide character names must not be used
+as `RC_REPO` world IDs by anyone outside this table.
 
 | Name | Kind | Use |
 |---|---|---|
@@ -21,8 +22,9 @@ must not be used as `RC_REPO` world IDs by anyone outside this table.
 | Deep Thought | forbidden | Never a world or agent. |
 | 42, Earth | forbidden | Never a world. |
 
-New world → new problem slug. Do not spend Trillian/Eddie/Arthur as world
-IDs. Do not invent extra Guide names as GitHub repos.
+New world → new problem slug in [`WORLDS.md`](WORLDS.md). Do not spend
+Trillian/Eddie/Arthur as world IDs. Do not invent extra Guide names as
+GitHub repos.
 
 Hermes PEM is dispatcher-only. Eddie gets a **separate** App + PEM.
 Arthur and Trillian get no PEM.
